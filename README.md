@@ -14,11 +14,11 @@ The dataset is divided into training (80%) and testing sets (20%). The training 
 
 AutoML is trained on the training data with 5-fold cross-validation, evaluating multiple models. The parameters for AutoML include:
 
-Featurization: TabularFeaturizationSettings(mode="Auto")
-Timeout: 15 minutes
-Trial Timeout: 2 minutes
-Max Trials: 40
-Enable Early Termination: True
+Featurization: TabularFeaturizationSettings(mode="Auto") \
+Timeout: 15 minutes \
+Trial Timeout: 2 minutes \
+Max Trials: 40 \
+Enable Early Termination: True \
 
 ## Step 3: Model Evaluation
 
