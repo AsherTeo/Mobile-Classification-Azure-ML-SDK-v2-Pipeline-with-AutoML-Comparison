@@ -18,7 +18,7 @@ Featurization: TabularFeaturizationSettings(mode="Auto") \
 Timeout: 15 minutes \
 Trial Timeout: 2 minutes \
 Max Trials: 40 \
-Enable Early Termination: True \
+Enable Early Termination: True 
 
 ## Step 3: Model Evaluation
 
