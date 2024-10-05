@@ -8,19 +8,21 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 
 ## Step 1: Split Data
 
-The dataset is divided into training (0.8) and testing sets(0.2). The training set is used for cross-validation (k=5) to ensure reliable model performance and the testing set is used for evaluation. 
+The dataset is divided into training (80%) and testing sets (20%). The training set is used for 5-fold cross-validation to ensure reliable model performance, while the testing set is reserved for final evaluation. 
 
 ## Step 2: AutoML Training
 
-AutoML trains on the training data with 5-fold cross-validation, testing multiple models. These are the parameters for AutoML. 
-Featurization=TabularFeaturizationSettings(mode="Auto"), timeout_minutes=15, 
-        trial_timeout_minutes=2, 
-        max_trials=60,
-        enable_early_termination=True,
+AutoML is trained on the training data with 5-fold cross-validation, evaluating multiple models. The parameters for AutoML include:
+
+Featurization: TabularFeaturizationSettings(mode="Auto")
+Timeout: 15 minutes
+Trial Timeout: 2 minutes
+Max Trials: 40
+Enable Early Termination: True
 
 ## Step 3: Model Evaluation
 
-The best model is selected and evaluated on the test data, and its performance is measured using the weighted F1 score,.... to assess its classification accuracy.
+The pipeline generates two outputs: the best model and the testing dataset. The best model is selected and evaluated on the test data, with performance measured using the weighted F1 score to assess classification accuracy.
 
 ![image](https://github.com/user-attachments/assets/e528d936-b651-495f-b81b-6eb5bbe00e04)
 
