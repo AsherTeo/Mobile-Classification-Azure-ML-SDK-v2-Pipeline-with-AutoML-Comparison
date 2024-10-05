@@ -6,7 +6,8 @@ I utilized Azure ML SDK v2 to build a manually optimized pipeline and compared i
 
 # Azure AutoML Implementation
 
-![image1](https://github.com/user-attachments/assets/58575000-83c9-4298-9f0a-c052b099848d)
+![image](https://github.com/user-attachments/assets/e528d936-b651-495f-b81b-6eb5bbe00e04)
+
 
 ![image](https://github.com/user-attachments/assets/d208d152-c918-40da-906b-1f172ae2e0c8)
 
